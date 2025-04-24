@@ -13,7 +13,6 @@
     "allowJs": true,
     "checkJs": false,
     "noImplicitAny": false,
-    "suppressImplicitAnyIndexErrors": true,
     "types": ["node"]
   },
   "include": ["src/**/*"],
