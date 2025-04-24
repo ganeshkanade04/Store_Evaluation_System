@@ -7,8 +7,8 @@ A powerful full-stack application that enables users to rate local stores, store
 Use the sample credentials below to log in as different roles:
 
 - **Administrator**
-  - Email: `adminuser123@gmail.com`
-  - Password: `user12345`
+  - Email: `	adminuser123@gmail.com`
+  - Password: `admin@1234`
 
 - **Store Owner**
   - Email: `storeowner123@gmail.com`
