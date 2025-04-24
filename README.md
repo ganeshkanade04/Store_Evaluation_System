@@ -1,113 +1,70 @@
-# Store Rating System
+# ⭐ Store Review Portal
 
-A full-stack application for managing and rating stores, with separate interfaces for users, store owners, and administrators.
-### 🔐 Demo Credentials
+A powerful full-stack application that enables users to rate local stores, store owners to manage listings, and admins to monitor platform-wide activity.
 
-Use the following credentials to explore the app's different roles:
+### 🔑 Test Credentials
 
-- **Admin**
-  - Email: `akash@gmail.com`
-  - Password: `123456`
+Use the sample credentials below to log in as different roles:
+
+- **Administrator**
+  - Email: `admin@reviewhub.com`
+  - Password: `admin123`
 
 - **Store Owner**
-  - Email: `chaitanya@gmail.com`
-  - Password: `123456`
+  - Email: `owner@reviewhub.com`
+  - Password: `owner123`
 
-## Overview
+- **User**
+  - Email: `user@reviewhub.com`
+  - Password: `user123`
 
-The Store Rating System allows:
-- **Users** to browse stores and submit ratings/reviews
-- **Store Owners** to manage their store listings and view performance metrics
-- **Administrators** to oversee all users, stores, and system analytics
+## 📋 Project Summary
 
-## Technology Stack
+The Store Review Portal provides:
+- **Users** the ability to browse stores, write reviews, and rate their experiences.
+- **Store Owners** tools to manage their business listings and track customer feedback.
+- **Admins** a dashboard to manage users, moderate content, and review analytics.
+
+## 💻 Tech Stack
 
 ### Frontend
-- React.js with TypeScript
-- Redux for state management
-- Material-UI (MUI) components
-- Axios for API requests
+- React (with TypeScript)
+- Zustand for state management
+- Tailwind CSS for styling
+- Axios for communicating with APIs
 
 ### Backend
-- Node.js with Express
-- PostgreSQL database (Neon DB)
-- JWT authentication
-- RESTful API architecture
+- Node.js + Express.js
+- PostgreSQL (via Supabase or Neon DB)
+- JWT-based Authentication
+- RESTful API design
 
-## Project Structure
+## 📁 Directory Layout
 
-```
-├── frontend/       # React frontend application
-├── backend/        # Node.js backend API
-├── API.md          # API documentation
-└── README.md       # Project overview and instructions
-```
+├── client/ # Frontend (React) ├── server/ # Backend (Express.js) ├── api-docs/ # API reference files └── README.md # Setup instructions and overview
 
-## Installation
+
+## 🛠️ Setup Instructions
 
 ### Prerequisites
-- Node.js (v14+)
-- PostgreSQL database (or Neon DB account)
+- Node.js (v16 or higher)
+- PostgreSQL setup (local or cloud like Neon/Supabase)
 - npm or yarn
 
-### Backend Setup
-1. Navigate to the backend directory:
-   ```
-   cd backend
-   ```
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Copy the environment variables file:
-   ```
-   cp .env.example .env
-   ```
-4. Configure your `.env` file with your PostgreSQL/Neon DB credentials
-5. Run database migrations:
-   ```
-   npm run migrate
-   ```
-6. Start the server:
-   ```
-   npm run dev
-   ```
+### Backend
+1. Open the backend folder:
+   ```bash
+   cd server
 
-### Frontend Setup
-1. Navigate to the frontend directory:
-   ```
-   cd frontend
-   ```
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Copy the environment variables file:
-   ```
-   cp .env.example .env
-   ```
-4. Configure your `.env` file with your backend API URL
-5. Start the development server:
-   ```
-   npm start
-   ```
 
-## API Documentation
+API Reference
+Full API documentation is available in the api-docs folder or inside the API.md file.
 
-See [API.md](API.md) for detailed API documentation.
+Role-based login system
+Submit and view ratings/reviews for stores
+Dashboard insights for owners
+Responsive and modern UI
+Real-time data visualization
+Advanced filtering and search
 
-## Key Features
 
-- User authentication with role-based access
-- Store rating system with comments
-- Responsive design for all device sizes
-- Real-time statistics and data visualization
-- Search and filter functionality
-
-## License
-
-MIT
-
-## Author
-
-Ritesh 
