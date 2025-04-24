@@ -24,8 +24,8 @@ export const initDatabase = async (): Promise<void> => {
       // Create admin user
       await UserModel.create({
         name: 'Admin User',
-        email: 'admin@example.com',
-        password: 'admin123',
+        email: 'adminuser123@gmail.com',
+        password: 'user12345',
         address: 'Admin Address',
         role: 'admin',
       });
@@ -39,8 +39,8 @@ export const initDatabase = async (): Promise<void> => {
       // Create regular user
       const regularUser = await UserModel.create({
         name: 'Regular User',
-        email: 'user@example.com',
-        password: 'user123',
+        email: 'user123@gmail.com',
+        password: 'user56789',
         address: 'User Address',
         role: 'user',
       });
@@ -48,8 +48,8 @@ export const initDatabase = async (): Promise<void> => {
       // Create store owner
       const storeOwner = await UserModel.create({
         name: 'Store Owner',
-        email: 'storeowner@example.com',
-        password: 'store123',
+        email: 'storeowner123@gmail.com',
+        password: 'store987456',
         address: 'Store Owner Address',
         role: 'store_owner',
       });
