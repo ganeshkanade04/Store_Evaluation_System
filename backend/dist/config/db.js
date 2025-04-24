@@ -24,7 +24,7 @@ const pool = new pg_1.Pool({
 });
 const connectDB = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        console.log('Connecting to ElephantSQL PostgreSQL database...');
+        console.log('Connecting PostgreSQL database...');
         const result = yield pool.query('SELECT NOW()');
         console.log('PostgreSQL database connected successfully:', result.rows[0].now);
     }

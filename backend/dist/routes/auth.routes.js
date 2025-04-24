@@ -11,14 +11,14 @@ const router = express_1.default.Router();
 // Validation rules
 const signupValidation = [
     (0, express_validator_1.body)('name')
-        .isLength({ min: 10, max: 60 })
+        .isLength({ min: 20, max: 60 })
         .withMessage('Name must be between 20 and 60 characters'),
     (0, express_validator_1.body)('email').isEmail().withMessage('Please include a valid email'),
     (0, express_validator_1.body)('password')
-        .isLength({ min: 6, max: 16 })
-        .withMessage('Password must be between 8 and 16 characters'),
-    // .matches(/^(?=.*[A-Z])(?=.*[!@#$%^&*])/)
-    // .withMessage('Password must include at least one uppercase letter and one special character'),
+        .isLength({ min: 8, max: 16 })
+        .withMessage('Password must be between 8 and 16 characters')
+        .matches(/^(?=.*[A-Z])(?=.*[!@#$%^&*])/)
+        .withMessage('Password must include at least one uppercase letter and one special character'),
     (0, express_validator_1.body)('address')
         .isLength({ max: 400 })
         .withMessage('Address must be maximum 400 characters'),
@@ -32,11 +32,11 @@ const passwordUpdateValidation = [
         .notEmpty()
         .withMessage('Current password is required'),
     (0, express_validator_1.body)('newPassword')
-        .isLength({ min: 6, max: 16 })
-        .withMessage('New password must be between 6 and 16 characters'),
-    // Comment out strict password requirements for testing
-    // .matches(/^(?=.*[A-Z])(?=.*[!@#$%^&*])/)
-    // .withMessage('New password must include at least one uppercase letter and one special character'),
+        .isLength({ min: 8, max: 16 })
+        .withMessage('New password must be between 6 and 16 characters')
+        // Comment out strict password requirements for testing
+        .matches(/^(?=.*[A-Z])(?=.*[!@#$%^&*])/)
+        .withMessage('New password must include at least one uppercase letter and one special character'),
 ];
 // Routes
 router.post('/signup', signupValidation, auth_controller_1.signup);
