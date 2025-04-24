@@ -7,16 +7,16 @@ A powerful full-stack application that enables users to rate local stores, store
 Use the sample credentials below to log in as different roles:
 
 - **Administrator**
-  - Email: `admin@reviewhub.com`
-  - Password: `admin123`
+  - Email: `adminuser123@gmail.com`
+  - Password: `user12345`
 
 - **Store Owner**
-  - Email: `owner@reviewhub.com`
-  - Password: `owner123`
+  - Email: `storeowner123@gmail.com`
+  - Password: `store987456`
 
 - **User**
-  - Email: `user@reviewhub.com`
-  - Password: `user123`
+  - Email: `user123@gmail.com`
+  - Password: `user56789`
 
 ## 📋 Project Summary
 
