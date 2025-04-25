@@ -1,3 +1,12 @@
+## 🌐 Live Website
+
+Click the link below to visit the Store Evaluation System:
+
+🔗 [https://store-evaluation-system-b8ll.vercel.app/login](https://store-evaluation-system-b8ll.vercel.app/login)
+
+
+
+
 # ⭐ Store Review Portal
 
 A powerful full-stack application that enables users to rate local stores, store owners to manage listings, and admins to monitor platform-wide activity.
@@ -12,11 +21,11 @@ Use the sample credentials below to log in as different roles:
 
 - **Store Owner**
   - Email: `storeowner123@gmail.com`
-  - Password: `store987456`
+  - Password: `Store@1234`
 
 - **User**
-  - Email: `user123@gmail.com`
-  - Password: `user56789`
+  - Email: `user1234@gmail.com`
+  - Password: `User@1234`
 
 ## 📋 Project Summary
 
